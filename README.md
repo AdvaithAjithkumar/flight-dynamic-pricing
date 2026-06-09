@@ -2,7 +2,7 @@
 
 A supervised machine learning system that predicts optimal flight ticket prices based on booking conditions, trained on 300,000+ real Indian flight records.
 
-**Live Demo → [Flight Dynamic Pricing App](https://your-app-url.streamlit.app)**
+**Live Demo → [Flight Dynamic Pricing App](https://flight-dynamic-pricing.streamlit.app/)**
 
 ---
 
