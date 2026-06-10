@@ -32,12 +32,11 @@ Hyperparameter tuning via Optuna (50 trials) improved RMSE by **24.7%** over bas
 
 ## Project Structure
 
+\```
 flight-dynamic-pricing/
 │
 ├── data/
-│   ├── raw/                    ← Original Kaggle CSVs (not tracked)
-│   ├── Clean_Dataset_v1.csv    ← After audit + column drops
-│   └── Clean_Dataset_v2.csv    ← After feature engineering (51 features)
+│   └── raw/                    ← Original Kaggle CSVs (not tracked)
 │
 ├── src/
 │   ├── phase1_data_audit.py    ← Data loading, null check, shape audit
@@ -59,8 +58,7 @@ flight-dynamic-pricing/
 ├── app.py                      ← Streamlit app
 ├── requirements.txt
 └── README.md
-
----
+\```
 
 ## Feature Engineering
 
