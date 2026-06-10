@@ -32,7 +32,7 @@ Hyperparameter tuning via Optuna (50 trials) improved RMSE by **24.7%** over bas
 
 ## Project Structure
 
-\```
+```
 flight-dynamic-pricing/
 │
 ├── data/
@@ -58,22 +58,7 @@ flight-dynamic-pricing/
 ├── app.py                      ← Streamlit app
 ├── requirements.txt
 └── README.md
-\```
-
-## Feature Engineering
-
-| Feature | Type | Source | Rationale |
-|---|---|---|---|
-| `price_log` | Target | `log1p(price)` | Right-skewed distribution |
-| `class_encoded` | Binary | `class` | Economy=0, Business=1 |
-| `stops_encoded` | Ordinal | `stops` | zero=0, one=1, two_or_more=2 |
-| `departure_time_encoded` | Ordinal | `departure_time` | Ranked by median price |
-| `booking_urgency` | Engineered | `days_left` | 0=early(50+), 1=medium(17-49), 2=last_minute(0-16) |
-| `airline_*` | One-hot | `airline` | 5 airline dummy columns |
-| `route_*` | One-hot | source+destination | 29 route dummy columns |
-
----
-
+```
 ## How to Run Locally
 
 ```bash
